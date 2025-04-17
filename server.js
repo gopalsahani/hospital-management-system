@@ -22,13 +22,13 @@ connectDB();
 app.use("/api/v1/user", require("./routes/userRoutes"));
 app.use("/api/v1/admin", require("./routes/Adminroutes"));
 app.use("/api/v1/doctor", require("./routes/doctorRoutes"));
-/*
+
 //static files used here for hosting , but not use for local host
 app.use(express.static(path.join(__dirname,"./client/build")));
 app.get('*',function(req,res){
   res.sendFile(path.join(__dirname,"./client/build/index.html"));
 })
-*/
+
 
 /*
 app.get("/",(req,res)=>{
